@@ -8,6 +8,12 @@ $desktopSize: 1024px;
   margin: 0 auto;
 }
 
+@mixin media-query($device) {
+  @media screen and (min-width: $device) {
+    @content;
+  }
+}
+
 @keyframes showHeader {
   0%   {opacity: 0}
   100% {opacity: 1}
@@ -21,15 +27,27 @@ $desktopSize: 1024px;
 h1, h2, h3, h4, p, a, span {
   font-family: $mainFont;
 }
+h2, h3, h4, span {
+  width: 90%;
+  padding: 0 5%;
+}
 h2 {
-  font-size: 48px;
+  font-size: 7.5em;
   font-weight: 500;
+  @include media-query($desktopSize) {
+    font-size: 3em;
+  }
 }
 h1, h3, h4 {
   font-weight: 200;
 }
 h3 {
-  font-size: 32px;
+  font-size: 5em;
+  margin: 30px 0 0 0;
+  @include media-query($desktopSize) {
+    font-size: 32px;
+    margin: 0;
+  }
 }
 p, span {
   font-weight: 100;
@@ -53,9 +71,16 @@ header {
   width: 100%;
   transform: translate(-50%, 0);
   z-index: 5;
-  padding: 20px 0;
+  padding: 120px 0;
+  @include media-query($desktopSize) {
+    padding: 20px 0;
+  }
   .center {
-    @include center;
+    text-align: center;
+    @include media-query($desktopSize) {
+      @include center;
+      text-align: left;
+    }
   }
   li {
     display: inline-block;
@@ -73,16 +98,27 @@ header {
   }
   h1, a {
     color: white;
-    letter-spacing: 4px;
+    letter-spacing: 24px;
     text-transform: uppercase;
     font-weight: 200;
+    @include media-query($desktopSize) {
+      letter-spacing: 4px;
+    }
   }
   h1 {
-    font-size: 24px;
+    font-size: 5em;
+    display: inline-block;
+    @include media-query($desktopSize) {
+      font-size: 24px;
+    }
   }
   nav {
+    display: none;
     float: right;
     padding: 5px 0 0 0;
+    @include media-query($desktopSize) {
+      display: block;
+    }
   }
 }
 .fixed {
@@ -90,29 +126,49 @@ header {
   background-image: linear-gradient(-134deg, #42008D 0%, #4B0357 100%);
   position: fixed;
   animation: showHeader .5s;
+  padding: 20px 0;
 }
 
 /* Main */
 #main {
   padding: 0;
-  text-align: left;
+  text-align: center;
   background: #42008D;
   background-image: linear-gradient(-134deg, #42008D 0%, #4B0357 100%);
+  @include media-query($desktopSize) {
+    text-align: left;
+  }
   .center {
-    @include center;
     position: relative;
     overflow: hidden;
-    padding: 250px 0 120px 0;
+    padding: 300px 0 0 0;
+    @include media-query($desktopSize) {
+      @include center;
+      padding: 250px 0 120px 0;
+    }
   }
   img {
-    position: absolute;
+    position: static;
     bottom: -200px;
     right: 0;
+    width: 90%;
+    margin: 100px 0;
+    @include media-query($desktopSize) {
+      position: absolute;
+      width: auto;
+      margin: 0;
+    }
   }
   h2 {
-    font-size: 48px;
+    font-size: 6em;
     color: #FFFFFF;
-    width: 532px;
+    width: 100%;
+    padding: 100px 0;
+    @include media-query($desktopSize) {
+      width: 532px;
+      font-size: 3em;
+      padding: 0;
+    }
   }
 }
 
@@ -123,9 +179,11 @@ header {
   background-size: cover;
   padding-top: 200px;
   .center {    
-    @include center;
     position: relative;
     z-index: 2;
+    @include media-query($desktopSize) {
+      @include center;
+    }
   }
   &:before {
     background-image: linear-gradient(-90deg, rgba(48,35,174,0.70) 0%, rgba(83,160,253,0.70) 48%, rgba(180,236,81,0.70) 100%);
@@ -142,46 +200,94 @@ header {
     color: white;
   }
   ul {
-    padding: 70px 0 0 0;
+    padding: 170px 0 0 0;
+    @include media-query($desktopSize) {
+      padding: 70px 0 0 0;
+    }
     li {
       display: inline-block;
+      width: 90%;
+      @include media-query($desktopSize) {
+        width: auto;
+      }
+      img {
+        width: 60%;
+        margin: 0 0 100px 0;
+        @include media-query($desktopSize) {
+          width: auto;
+          margin: 0;
+        }
+      }
     }
+    // img {
+    //   width: 90%;
+    //   @include media-query($desktopSize) {
+    //     width: auto;
+    //   }
+    // }
   }
 }
 
 /* Features */
 #features {
   .center {
-    @include center;
     text-align: left;
     padding-top: 100px;
+    @include media-query($desktopSize) {
+      @include center;
+    }
+  }
+  .phone-img {
+    display: none;
+    @include media-query($desktopSize) {
+      display: inline-block;
+    }
   }
   img, ul {
     display: inline-block;
     vertical-align: middle;
   }
+  img {
+    width: 20%;
+    @include media-query($desktopSize) {
+      width: auto;
+    }
+  }
   ul {
-    width: 700px;
     text-align: center;
+    @include media-query($desktopSize) {
+      width: 700px;
+    }
   }
   li {
     display: inline-block;
     text-align: center;
-    width: 288px;
-    margin-bottom: 50px;
+    width: 90%;
+    padding: 0 5%;
+    margin: 150px 0 0 0;
+    @include media-query($desktopSize) {
+      width: 288px;
+      margin: 0 0 50px 0;
+    }
   }
   h2, h3 {
     color: #6E0082;
   }
   h4 {
-    font-size: 28px;
+    font-size: 6em;
     color: #6E0082;
     margin: 10px 0 5px 0;
+    @include media-query($desktopSize) {
+      font-size: 28px;
+    }
   }
   p {
-    font-size: 20px;
+    font-size: 3em;
     color: #6E0082;
-    line-height: 28px;
+    @include media-query($desktopSize) {
+      font-size: 20px;
+      line-height: 28px;
+    }
   }
 }
 
