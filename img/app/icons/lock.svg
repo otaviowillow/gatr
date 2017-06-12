@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="80px" viewBox="0 0 50 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Fill 174</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="101.999998%" y2="100.999999%" id="linearGradient-1">
+            <stop stop-color="#170032" offset="0%"></stop>
+            <stop stop-color="#DA00FF" offset="99.5232096%"></stop>
+            <stop stop-color="#DB00FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-827.000000, -1534.000000)" fill="url(#linearGradient-1)">
+            <g id="Features" transform="translate(0.000000, 977.000000)">
+                <g id="props/about/text" transform="translate(708.000000, 557.000000)">
+                    <path d="M144,75 C132.955,75 124,66.045 124,55 C124,43.955 132.955,35 144,35 C154.67,35 164,44.33 164,55 C164,66.045 155.045,75 144,75 L144,75 Z M129,20 C129,11.7175 135.7175,5 144,5 C152.2825,5 159,11.7175 159,20 L159,35.035 C154.8175,31.8875 149.6375,30 144,30 C138.365,30 133.1825,31.8875 129,35.035 L129,20 L129,20 Z M164,40.0475 L164,20 C164,8.955 155.045,0 144,0 C132.955,0 124,8.955 124,20 L124,40.0475 C120.875,44.22 119,49.385 119,55 C119,68.8075 130.195,80 144,80 C157.805,80 169,68.8075 169,55 C169,49.385 167.125,44.22 164,40.0475 L164,40.0475 Z M144,50 C142.6175,50 141.5,51.12 141.5,52.5 L141.5,62.5 C141.5,63.8825 142.6175,65 144,65 C145.3825,65 146.5,63.8825 146.5,62.5 L146.5,52.5 C146.5,51.12 145.3825,50 144,50 L144,50 Z" id="Fill-174"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

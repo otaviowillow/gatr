@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>app/icons</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="101.999998%" y2="100.999999%" id="linearGradient-1">
+            <stop stop-color="#170032" offset="0%"></stop>
+            <stop stop-color="#DA00FF" offset="99.5232096%"></stop>
+            <stop stop-color="#DB00FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="props/about/text" transform="translate(-104.000000, 0.000000)" fill="url(#linearGradient-1)">
+            <g id="app/icons/star" transform="translate(104.000000, 0.000000)">
+                <path d="M40,60.525 L21.4275,70.9375 L24.9725,49.9275 L8.985,33.605 L30.6125,30.7925 L40,10.7825 L49.305,30.7925 L70.86,33.85 L55.0275,50.005 L58.3375,71.015 L40,60.525 L40,60.525 Z M80,30.61 L52.405,26.4 L40,0 L27.595,26.4 L0,30.61 L19.9625,51.05 L15.2375,80 L40,66.325 L64.7625,80 L60.0375,51.05 L80,30.61 L80,30.61 Z" id="Fill-71"></path>
+            </g>
+        </g>
+    </g>
+</svg>
